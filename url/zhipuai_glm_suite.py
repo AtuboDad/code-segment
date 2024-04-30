@@ -2,8 +2,8 @@ import zhipuai
 from zhipuai import ZhipuAI
 
 
-# zhipuai.api_key = "e278c9eeb3b20a44eb01a6970596d48d.Z061oHclQkORyhkl"
-client = ZhipuAI(api_key="e278c9eeb3b20a44eb01a6970596d48d.Z061oHclQkORyhkl")
+# zhipuai.api_key = "your api key"
+client = ZhipuAI(api_key="your api key")
 
 response = client.chat.completions.create(
     model="glm-4",

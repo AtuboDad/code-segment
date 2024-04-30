@@ -44,7 +44,7 @@ def parse_function_call(model_response,messages):
         print(response.choices[0].message)
         messages.append(response.choices[0].message.model_dump())
 
-client = ZhipuAI(api_key="e278c9eeb3b20a44eb01a6970596d48d.Z061oHclQkORyhkl")
+client = ZhipuAI(api_key="your api key")
 messages = []
 tools = [
     {

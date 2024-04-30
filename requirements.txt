@@ -6,3 +6,4 @@ PyPDF2
 PyMuPDF
 matplotlib
 fpdf
+opencv-python

@@ -2,8 +2,9 @@
 
 from zhipuai import ZhipuAI
 
+api_key = 'e278c9eeb3b20a44eb01a6970596d48d.Z061oHclQkORyhkl'
 
-client = ZhipuAI(api_key="your api key")
+client = ZhipuAI(api_key=api_key)
 
 question = '桥梁总长度是多少?'
 response = client.chat.completions.create(

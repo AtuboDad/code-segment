@@ -2,8 +2,10 @@
 import numpy as np
 import cv2 as cv
 
-drawing = False  # 如果按下鼠标，则为真
-mode = True  # 如果为真，绘制矩形。按 m 键可以切换到曲线
+# 如果按下鼠标，则为真
+drawing = False
+# 如果为真，绘制矩形。按 m 键可以切换到曲线
+mode = True
 ix, iy = -1, -1
 
 

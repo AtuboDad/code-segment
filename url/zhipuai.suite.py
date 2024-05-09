@@ -24,6 +24,6 @@ response = client.chat.completions.create(
 
 resp = []
 for trunk in response:
-    resp.append(trunk.choices[0].delta.content)
+    print(trunk.choices[0].delta.content)
 
 print(''.join(resp))

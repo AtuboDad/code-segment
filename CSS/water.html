@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="utf-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"> -->
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>111</title>
+ 
+</head>
+
+    <body>
+        <div class="TankShaking_container">
+            <div class="TankShaking_content">
+            <div class="TankShaking_bottle">
+                    <div class="TankShaking_water"></div>
+                </div>
+                <div class="TankShaking_bottleBottom"></div>
+            </div>
+        </div>
+
+    </body>
+
+
+    <style>
+  
+.TankShaking_container .TankShaking_content {
+     width: 420px;height: 420px;
+     background-image: linear-gradient(90deg, #04182c, #000c17, #04182c);position: relative;
+     padding: 100px; box-sizing: border-box;
+}
+.TankShaking_container .TankShaking_content .TankShaking_bottle {
+    animation: TankShaking_animate__s7STs 2s linear infinite;
+    background-color: hsla(0,0%,100%,.102);
+    border-radius: 50%;
+    height: 200px;
+    position: relative;
+    transform-origin: bottom center;
+    width: 200px;
+    z-index: 2
+}
+
+.TankShaking_container .TankShaking_content .TankSha king_bottle:before {
+    background-color: #505250;
+    border-radius: 50%;
+    box-shadow: 0 6.6666666667px 5px #000;
+    content: "";
+    height: 40px;
+    left: 50%;
+    position: absolute;
+    top: -5px;
+    transform: translate(-50%);
+    width: 100px
+
+}
+
+.TankShaking_container .TankShaking_content .TankShaking_bottle .TankShaking_water {
+    animation: TankShaking_animate2__M8tPD 2s linear infinite;
+    background-color: #41c1fb;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    bottom: 10px;
+    left: 10px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform-origin: top center
+}
+.TankShaking_container .TankShaking_content .TankShaking_bottle .TankShaking_water:before {
+    background-color: #0da2e7;
+    border-radius: 50%;
+    content: "";
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: -10px;
+    width: 100%
+}
+.TankShaking_container .TankShaking_content .TankShaking_bottleBottom {
+    animation: TankShaking_move__yUHoY 2s linear infinite;
+    background-color: #00000080;
+    border-radius: 50%;
+    height: 30px;
+    left: 50%;
+    position: absolute;
+    top: calc(100% - 66px);
+    transform: translateX(-50%);
+    width: 200px
+}
+
+@keyframes TankShaking_animate__s7STs {
+    0% {
+        transform: rotate(0)
+    }
+    25% {
+        transform: rotate(15deg)
+    }
+    50% {
+        transform: rotate(0)
+    }
+    75% {
+        transform: rotate(-15deg)
+    }
+    to {
+        transform: rotate(0)
+    }
+}
+
+@keyframes TankShaking_animate2__M8tPD {
+    0% {
+        filter: drop-shadow(0 0 50px #41c1fb) hue-rotate(0deg);
+        transform: rotate(0)
+    }
+    25% {
+        transform: rotate(-15deg)
+    }
+    50% {
+        transform: rotate(0)
+    }
+    75% {
+        transform: rotate(15deg)
+    }
+    to {
+        filter: drop-shadow(0 0 50px #41c1fb) hue-rotate(1turn);
+        transform: rotate(0)
+    }
+}
+
+@keyframes TankShaking_move__yUHoY {
+    0% {
+        transform: translateX(-50%)
+    }
+    25% {
+        transform: translateX(calc(-50% + 20px))
+    }
+    50% {
+        transform: translateX(-50%)
+    }
+    75% {
+        transform: translateX(calc(-50% - 20px))
+    }
+    to {
+        transform: translateX(-50%)
+    }
+}
+    </style>
+
+
+</html>

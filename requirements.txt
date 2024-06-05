@@ -8,3 +8,10 @@ matplotlib
 fpdf
 opencv-python
 jieba
+
+ChatTTS
+IPython
+omegaconf
+vocos
+vector_quantize_pytorch
+transformers

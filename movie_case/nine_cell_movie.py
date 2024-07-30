@@ -28,7 +28,7 @@ class MovieCase:
         if os.path.exists(file_path):
             return
 
-        os.mkdir(file_path)
+        os.makedirs(file_path)
 
     @staticmethod
     def remove_folder(file_path):
